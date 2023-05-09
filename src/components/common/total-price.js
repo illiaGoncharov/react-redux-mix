@@ -7,7 +7,6 @@ export const TotalPrice = ({ extraClass }) => {
     state.cart.items.reduce((acc, item) => acc + item.price * item.quantity, 0)
   );
 
-  // console.log(cartItems, totalPrice, discount);
   return (
     <div className={`${styles.container} ${extraClass}`}>
       <p className={styles.text}>Итого:</p>
